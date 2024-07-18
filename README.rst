@@ -21,7 +21,7 @@ The main components of the toolkit are the models and training scripts on corres
 
 Quickstart and Tutorial
 -----------------------
-The following example in ``examples/microelectrode/willett_2023`` demonstrates how to train a GRU model on the `A high-performance speech neuroprosthesis <https://datadryad.org/stash/dataset/doi:10.5061/dryad.x69p8czpq>`_ dataset using the Innerspeech toolkit. This exmaple is equivalent to the ``InnerSpeech (RNN-transformer 3-gram rescore) WER 10.08`` submission on the `Brain-to-Text Benchmark '24 <https://eval.ai/web/challenges/challenge-page/2099/leaderboard/4944>`_.
+The following example in ``examples/microelectrode/willett_2023`` demonstrates how to train a GRU model on the `A high-performance speech neuroprosthesis <https://datadryad.org/stash/dataset/doi:10.5061/dryad.x69p8czpq>`_ dataset using the Innerspeech toolkit. This example is equivalent to the ``InnerSpeech (RNN-transformer 3-gram rescore) WER 10.08`` submission on the `Brain-to-Text Benchmark '24 <https://eval.ai/web/challenges/challenge-page/2099/leaderboard/4944>`_.
 
 More detailed tutorials and examples are available in the documentation and the examples directory of the repository.
 
@@ -47,5 +47,6 @@ If you use this toolkit in your research, please cite the following paper:
     title={Innerspeech: Biosignal Speech Recognition and Synthesis toolkit},
     author={Wang Yau Li},
     journal={arXiv preprint arXiv:},
-    year={2024}
+    year={2024},
+    githbu_repo={https://github.com/innerspeech/innerspeech}
     }
