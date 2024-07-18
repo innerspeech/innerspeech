@@ -10,6 +10,11 @@ Baseline modified from `neural_seq_decoder <https://github.com/cffan/neural_seq_
 
 Built on top of ``neural_seq_decoder`` we added a transformer layer to achieve a better performance in `InnerSpeech (RNN-transformer 3-gram rescore) <https://eval.ai/web/challenges/challenge-page/2099/leaderboard/4944>`_.
 
+Model checkpoints
+------------------
+
+WIP
+
 References
 ----------
 
