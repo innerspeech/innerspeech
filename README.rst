@@ -17,11 +17,11 @@ Please check `installation.rst <./installation.rst>`_ for the installation of th
 
 Usage
 -----
-The main components of the toolkit are the models and training scripts on corresponding datasets. The models are implemented as PyTorch-Lightning modules which provide a simple interface for training and evaluation on multi-node multi-GPU systems. Each subfolder in `examples` represents one replication of a paper in this field under the naming convention of `<modality>/<author/dataset>`. If the original dataset is available, we will provide a link to the original dataset and a command to download and preprocess the dataset. The toolkit includes a number of pre-implemented models with corresponding pretrained weights. In particular, the toolkit includes both supervised and unsupervised models for speech recognition and synthesis based on audio/biosignal data.
+The main components of the toolkit are the models and training scripts on corresponding datasets. The models are implemented as PyTorch-Lightning modules which provide a simple interface for training and evaluation on multi-node multi-GPU systems. Each subfolder in ``examples`` represents one replication of a paper in this field under the naming convention of ``<modality>/<author_year>``. If the original dataset is available, we will provide a link to the original dataset and a command to download and preprocess the dataset. The toolkit includes a number of pre-implemented models with corresponding pretrained weights. In particular, the toolkit includes both supervised and unsupervised models for speech recognition and synthesis based on audio/biosignal data.
 
 Quickstart and Tutorial
 -----------------------
-The following example in `examples/microelectrode/willett2023` demonstrates how to train a GRU model on the `A high-performance speech neuroprosthesis <https://datadryad.org/stash/dataset/doi:10.5061/dryad.x69p8czpq>`_ dataset using the Innerspeech toolkit.
+The following example in `examples/microelectrode/willett_2023` demonstrates how to train a GRU model on the `A high-performance speech neuroprosthesis <https://datadryad.org/stash/dataset/doi:10.5061/dryad.x69p8czpq>`_ dataset using the Innerspeech toolkit.
 
 TODO: <ADD EXAMPLE>
 
@@ -29,7 +29,7 @@ More detailed tutorials and examples are available in the documentation and the 
 
 Benchmarking Results
 --------------------
-In order to keep track of the performance of the toolkit, we maintain a list of benchmarking results on a variety of datasets. The leaderboard will be made available on the `huggingface BCI leaderboard <https://huggingface.co/innerspeech/benchmarking>`_. The benchmarking results are updated regularly and include the performance of the toolkit on a variety of datasets. Please feel free to contact us if you would like to add your own benchmarking results to the leaderboard.
+In order to keep track of the performance of the toolkit, we maintain a list of benchmarking results on a variety of datasets. The leaderboard will be made available on the `innerspeech/open-speechbci-leaderboard <https://huggingface.co/spaces/innerspeech/open-speechbci-leaderboard>`_. The benchmarking results wll be updated regularly and include the performance of the toolkit on a variety of datasets. Please feel free to contact us if you would like to add your own benchmarking results to the leaderboard.
 
 Support
 -------
