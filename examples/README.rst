@@ -1,8 +1,7 @@
-Examples in each modality:
+Examples in each modality
+-------------------------
 
-- [microelectrode]
-- [eeg]
-- [ecog]
-- [meg]
-- [emg]
-- [fnirs]
+- `microelectrode <microelectrode/>`_
+- `EEG <eeg/>`_
+- `EMG <emg/>`_
+- `HDEEG <hdeeg/>`_
