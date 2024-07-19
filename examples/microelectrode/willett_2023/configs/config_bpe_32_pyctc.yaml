@@ -1,0 +1,60 @@
+# yaml file for configuration of the neural sequence decoder  
+
+base:
+  date: ???
+  exp_name: ???
+  exp_dir: ???
+  output_dir: './output'
+  model_name: 'bpe'
+  log_file: 'log.txt'
+  note: "test"
+  config_file: 'exp_config.yaml'
+
+# Data prep configs
+dataset:
+  raw_path: './data/competitionData'
+  preprocessed_path: './data/preprocessed_bpe_32_pyctc.pkl'
+
+# Model
+model:
+  seqLen: 150
+  maxTimeSeriesLen: 1200 
+  lrStart: 0.04
+  lrEnd: 0.02
+  nUnits: 1024
+  nLayers: 5
+  nClasses: 32
+  nInputFeatures: 256
+  dropout: 0.4
+  whiteNoiseSD: 0.8
+  constantOffsetSD: 0.2
+  gaussianSmoothWidth: 2.0
+  strideLen: 4
+  kernelLen: 32
+  bidirectional: true
+  l2_decay: 0.00001
+  tokenizer: "bpe"
+  tokenizer_path: "./pretrained/m32.model"
+  
+
+# trainer
+trainer:
+  seed: 42
+  batch_size: 32
+  ml_logging: "wandb"
+  project_name: 'speechbci'
+  max_epochs: 100
+  gpus: 1
+  num_nodes: 1
+  strategy: "ddp_find_unused_parameters_true"
+  precision: "16-mixed"
+
+# Configure environment variables for multi nodes multi GPU DDP
+cluster: 
+  nodes: 1
+  node_rank: 0
+  world_size: 1
+  master_port: 1234
+  master_addr: 'einstein'
+
+  
