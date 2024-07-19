@@ -1,0 +1,22 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "innerspeech"
+version = "0.1.0"
+description = "Biosignal Speech Recognition and Synthesis Toolkit"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+lightning = "*"
+sentencepiece = "*"
+pyctcdecode = "*"
+jiwer = "*"
+pytorch-tdnn = "*"
+torchinfo = "*"
+
+[tool.poetry.dependencies.kenlm]
+url = "https://github.com/kpu/kenlm/archive/master.zip"
+markers = "sys_platform != 'win32'"
