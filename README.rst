@@ -31,7 +31,7 @@ In order to keep track of the performance of the toolkit, we maintain a list of 
 
 Support
 -------
-If you have any questions or need help with the toolkit, please feel free to contact me at kenneth@innerspeech.ai, or open an issue on the GitHub repository. You can also call our virtual toolkit assistant, Hannah, at +1 (437) 291 5346. Hannah has access to the entire package and can assist you in understanding the toolkit and locating relevant functions/features.
+If you have any questions or need help with the toolkit, please feel free to contact me at kenneth@innerspeech.ai, or open an issue on the GitHub repository. You can also call our virtual toolkit assistant, Hannah, at ``+1 (437)-291-5346``. Hannah has access to the entire package and can assist you in understanding the toolkit and locating relevant functions/features.
 
 Acknowledgements
 ----------------
