@@ -37,6 +37,8 @@ Acknowledgements
 ----------------
 I extend my heartfelt gratitude to Maogu, Xiaoju, Wugi, and Zihan for their unwavering support and encouragement throughout the development of this toolkit. Their contributions have been invaluable to the success of this project.
 
+I would also like to thank the following programs for their support on funding and cloud computing credits: Nvidia Inception, AWS Activate, HKSTP Ideation, HK Tech 300, Microsoft Founder Hub, Communitech Founder Program, Google for Startups, and OVHcloud Startup Program.
+
 Citation
 --------
 If you use this toolkit in your research, please cite the following paper:
