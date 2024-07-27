@@ -5,7 +5,7 @@ FROM nvcr.io/nvidia/nemo:24.05
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY .. /app
+COPY ../.. /app
 
 # Install Poetry
 RUN pip install poetry

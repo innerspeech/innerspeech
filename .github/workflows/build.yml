@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  docker-build-dev:
+  docker-build-core:
     runs-on: ubuntu-latest
     steps:
       -
@@ -23,9 +23,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Build and push (innerspeech-dev)
+        name: Build and push (core)
         uses: docker/build-push-action@v4
         with:
           context: "{{defaultContext}}:docker"
           push: true
-          tags: innerspeech/innerspeech-dev:latest, innerspeech/innerspeech-dev:${{ github.sha }}
+          tags: innerspeech/innerspeech-core:latest, innerspeech/innerspeech-core:${{ github.sha }}
