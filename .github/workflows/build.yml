@@ -1,13 +1,14 @@
 name: Build Docker Container
 
 on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches:
-      - main
-      - master
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  docker-build-dev:
+  docker-build-core:
     runs-on: ubuntu-latest
     steps:
       -
@@ -23,9 +24,10 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Build and push (innerspeech-dev)
+        name: Build and push (core)
         uses: docker/build-push-action@v4
         with:
-          context: "{{defaultContext}}:docker"
+          context: "{{defaultContext}}"
+          file: ./docker/core/Dockerfile
           push: true
-          tags: innerspeech/innerspeech-dev:latest, innerspeech/innerspeech-dev:${{ github.sha }}
+          tags: innerspeech/innerspeech-core:latest, innerspeech/innerspeech-core:${{ github.sha }}
