@@ -7,6 +7,7 @@ name = "innerspeech"
 version = "0.1.0"
 description = "Biosignal Speech Recognition and Synthesis Toolkit"
 authors = ["Wang Yau Li <kenneth@innerspeech.ai>"]
+packages = [{include = "*", from="src"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -16,6 +17,8 @@ pyctcdecode = "*"
 jiwer = "*"
 pytorch-tdnn = "*"
 torchinfo = "*"
+
+
 
 [tool.poetry.dependencies.kenlm]
 url = "https://github.com/kpu/kenlm/archive/master.zip"
