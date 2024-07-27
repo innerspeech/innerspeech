@@ -27,6 +27,7 @@ jobs:
         name: Build and push (core)
         uses: docker/build-push-action@v4
         with:
-          context: "{{defaultContext}}:docker/core"
+          context: "{{defaultContext}}"
+          file: ./docker/core/Dockerfile
           push: true
           tags: innerspeech/innerspeech-core:latest, innerspeech/innerspeech-core:${{ github.sha }}
